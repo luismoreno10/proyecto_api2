@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,7 @@ namespace pos_equipo
         private void textBox2_KeyDown(object sender, KeyEventArgs e)
         {
             
+
             if (e.KeyCode == Keys.Enter)
             {
                 double Total = Double.Parse(textBox1.Text);
@@ -60,9 +62,24 @@ namespace pos_equipo
             {
                 if (pagocompleto == true)
                 {
-                    venta.venta_realizada = true;
-                    MessageBox.Show("Gracias por su compra!.");
-                    this.Hide();
+                    MessageBox.Show("Insertamos venta");
+                    //insertamos venta en la tabla venta
+                    try
+                    {
+                        MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=punto_de_venta; SSL mode=none");
+                        mySqlConnection.Open();
+                        String query = "INSERT INTO ventas values (NULL, CURRENT_DATE(), CURRENT_TIME(), "+datos_usuarios.id+")";
+                        MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
+                        mySqlCommand.ExecuteNonQuery();
+                        venta.venta_realizada = true;
+                        MessageBox.Show("Gracias por su compra!.");
+                        this.Hide();
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Error añadiendo venta a la tabla " + error.ToString());
+                    }
+                    
                 }
                 else
                 {

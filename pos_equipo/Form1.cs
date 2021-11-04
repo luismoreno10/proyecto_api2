@@ -56,7 +56,9 @@ namespace pos_equipo
                     {
                         while (reader.Read())
                         {
+                            datos_usuarios.id = Int32.Parse(reader["id_usuario"].ToString());
                             datos_usuarios.sucursal = "Centro";
+                            datos_usuarios.nombre = datos_usuarios.nombre = reader["nombre_usuario"].ToString() + " " + reader["apellido_usuario"].ToString();
                             Form2 ventana_pos = new Form2();
                             ventana_pos.Show();
                             this.Hide();
@@ -79,6 +81,11 @@ namespace pos_equipo
                 
             }
             
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

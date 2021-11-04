@@ -26,6 +26,7 @@ namespace pos_equipo
             dataGridView1.Columns[0].Width = 25;
             Form2.ActiveForm.Width = 843;
             Form2.ActiveForm.Height = 610;
+            Acomodar();
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -260,11 +261,10 @@ namespace pos_equipo
             ventaRealizada();
         }
 
-        private void Form2_Resize(object sender, EventArgs e)
+        private void Acomodar()
         {
-
-            int width = Form2.ActiveForm.Width;
-            int heigth = Form2.ActiveForm.Height;
+            int width =this.Width;
+            int heigth = this.Height;
 
             //Rigth side Fixing
             pictureBox1.Location = new Point(width - pictureBox1.Width - 26, 16);
@@ -296,7 +296,11 @@ namespace pos_equipo
             label15.Location = new Point(label15.Location.X, heigth - 98);
 
             label8.Location = new Point(23, heigth - 75);
+        }
 
+        private void Form2_Resize(object sender, EventArgs e)
+        {
+            Acomodar();
         }
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
