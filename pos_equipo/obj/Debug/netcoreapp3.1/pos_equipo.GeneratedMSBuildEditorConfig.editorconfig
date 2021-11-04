@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = pos_equipo
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\luism\Desktop\proyecto_api2-master\pos_equipo\
+=======
+build_property.ProjectDir = C:\Users\ruddy\Documents\pos_equipo\proyecto_api2\proyecto_api2\pos_equipo\
+>>>>>>> 77750fcc2603ebbeb48ea39dcbebbb11336f2b1c

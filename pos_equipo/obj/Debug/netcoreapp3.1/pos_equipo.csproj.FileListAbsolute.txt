@@ -99,6 +99,7 @@ C:\Users\ruddy\Documents\pos_equipo\proyecto_api2\proyecto_api2\pos_equipo\obj\D
 C:\Users\ruddy\Documents\pos_equipo\proyecto_api2\proyecto_api2\pos_equipo\obj\Debug\netcoreapp3.1\pos_equipo.dll
 C:\Users\ruddy\Documents\pos_equipo\proyecto_api2\proyecto_api2\pos_equipo\obj\Debug\netcoreapp3.1\pos_equipo.pdb
 C:\Users\ruddy\Documents\pos_equipo\proyecto_api2\proyecto_api2\pos_equipo\obj\Debug\netcoreapp3.1\pos_equipo.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\luism\Desktop\proyecto_api2-master\pos_equipo\bin\Debug\netcoreapp3.1\pos_equipo.exe
 C:\Users\luism\Desktop\proyecto_api2-master\pos_equipo\bin\Debug\netcoreapp3.1\pos_equipo.deps.json
 C:\Users\luism\Desktop\proyecto_api2-master\pos_equipo\bin\Debug\netcoreapp3.1\pos_equipo.runtimeconfig.json
@@ -119,3 +120,5 @@ C:\Users\luism\Desktop\proyecto_api2-master\pos_equipo\obj\Debug\netcoreapp3.1\p
 C:\Users\luism\Desktop\proyecto_api2-master\pos_equipo\obj\Debug\netcoreapp3.1\pos_equipo.dll
 C:\Users\luism\Desktop\proyecto_api2-master\pos_equipo\obj\Debug\netcoreapp3.1\pos_equipo.pdb
 C:\Users\luism\Desktop\proyecto_api2-master\pos_equipo\obj\Debug\netcoreapp3.1\pos_equipo.genruntimeconfig.cache
+=======
+>>>>>>> 77750fcc2603ebbeb48ea39dcbebbb11336f2b1c
