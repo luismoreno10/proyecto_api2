@@ -45,18 +45,19 @@ namespace pos_equipo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(81, 27);
+            this.label1.Location = new System.Drawing.Point(71, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(343, 31);
+            this.label1.Size = new System.Drawing.Size(284, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido al sistema de ventas";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::pos_equipo.Properties.Resources.venta;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 99);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 74);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 168);
+            this.pictureBox1.Size = new System.Drawing.Size(142, 126);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -64,42 +65,45 @@ namespace pos_equipo
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(207, 99);
+            this.label2.Location = new System.Drawing.Point(181, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 20);
+            this.label2.Size = new System.Drawing.Size(50, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Usuario:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(207, 123);
+            this.textBox1.Location = new System.Drawing.Point(181, 92);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 27);
+            this.textBox1.Size = new System.Drawing.Size(237, 23);
             this.textBox1.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(207, 161);
+            this.label3.Location = new System.Drawing.Point(181, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 20);
+            this.label3.Size = new System.Drawing.Size(70, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "Contraseña:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(207, 185);
+            this.textBox2.Location = new System.Drawing.Point(181, 139);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 27);
+            this.textBox2.Size = new System.Drawing.Size(237, 23);
             this.textBox2.TabIndex = 5;
             this.textBox2.UseSystemPasswordChar = true;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(383, 266);
+            this.button1.Location = new System.Drawing.Point(335, 200);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 43);
+            this.button1.Size = new System.Drawing.Size(82, 32);
             this.button1.TabIndex = 6;
             this.button1.Text = "Ingresar";
             this.button1.UseVisualStyleBackColor = true;
@@ -109,9 +113,10 @@ namespace pos_equipo
             // 
             this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(207, 277);
+            this.comboBox1.Location = new System.Drawing.Point(181, 208);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 28);
+            this.comboBox1.Size = new System.Drawing.Size(119, 23);
             this.comboBox1.TabIndex = 7;
             this.comboBox1.Text = "Sucursal Centro";
             // 
@@ -120,17 +125,17 @@ namespace pos_equipo
             this.label_errores.AutoSize = true;
             this.label_errores.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label_errores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label_errores.Location = new System.Drawing.Point(207, 228);
+            this.label_errores.Location = new System.Drawing.Point(181, 171);
             this.label_errores.Name = "label_errores";
-            this.label_errores.Size = new System.Drawing.Size(0, 20);
+            this.label_errores.Size = new System.Drawing.Size(0, 15);
             this.label_errores.TabIndex = 8;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(489, 321);
+            this.ClientSize = new System.Drawing.Size(428, 241);
             this.Controls.Add(this.label_errores);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
@@ -141,10 +146,12 @@ namespace pos_equipo
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

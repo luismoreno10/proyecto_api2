@@ -52,24 +52,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luism\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ruddy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luism\\source\\repos\\respaldo\\pos_equipo\\pos_equipo\\pos_equipo.csproj",
+      "projectUniqueName": "C:\\Users\\ruddy\\Documents\\pos_equipo\\proyecto_api2\\proyecto_api2\\pos_equipo\\pos_equipo.csproj",
       "projectName": "pos_equipo",
-      "projectPath": "C:\\Users\\luism\\source\\repos\\respaldo\\pos_equipo\\pos_equipo\\pos_equipo.csproj",
-      "packagesPath": "C:\\Users\\luism\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luism\\source\\repos\\respaldo\\pos_equipo\\pos_equipo\\obj\\",
+      "projectPath": "C:\\Users\\ruddy\\Documents\\pos_equipo\\proyecto_api2\\proyecto_api2\\pos_equipo\\pos_equipo.csproj",
+      "packagesPath": "C:\\Users\\ruddy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ruddy\\Documents\\pos_equipo\\proyecto_api2\\proyecto_api2\\pos_equipo\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\luism\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ruddy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
