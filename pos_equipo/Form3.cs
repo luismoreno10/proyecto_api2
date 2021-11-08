@@ -71,6 +71,28 @@ namespace pos_equipo
                         String query = "INSERT INTO ventas values (NULL, CURRENT_DATE(), CURRENT_TIME(), "+datos_usuarios.id+")";
                         MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
                         mySqlCommand.ExecuteNonQuery();
+                        //obtenemos ultimo id de la venta
+                        query = "SELECT LAST_INSERT_ID()";
+                        mySqlCommand = new MySqlCommand(query, mySqlConnection);
+                        MySqlDataReader mySqlDataReader = mySqlCommand.ExecuteReader();
+                        int idVenta = 0;
+                        if (mySqlDataReader.HasRows)
+                        {
+                            mySqlDataReader.Read();
+                            idVenta = mySqlDataReader.GetInt32(0);
+                            //MessageBox.Show(mySqlDataReader.GetInt32(0).ToString());
+                            //mySqlDataReader.GetDouble(0);
+                        }
+                        //insertamos los detalles en venta detalles
+                        for (int i = 0; i < Form2.dataGridView1.Rows.Count; i++)
+                        {
+                            query = "INSERT INTO ventas_detalle (id_venta, id_producto, cantidad, precio_producto) VALUES "+
+                                "("+idVenta+","+ Form2.dataGridView1[2,i].Value.ToString() + ","+ Form2.dataGridView1[0,i].Value.ToString() +
+                                ","+ Form2.dataGridView1[3,i].Value.ToString() + " ) ";
+                            mySqlCommand = new MySqlCommand(query, mySqlConnection);
+                            mySqlCommand.ExecuteNonQuery();
+                        }
+
                         venta.venta_realizada = true;
                         MessageBox.Show("Gracias por su compra!.");
                         this.Hide();
