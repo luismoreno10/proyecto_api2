@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tpEAzijZIhif9o4WV1yHoJEY3n2CM7d8CYIffaPtgwL7VYnjWohz88AgTIh8Q+AQhw6khjkwFv/2nWZzr5BqjQ==",
+  "dgSpecHash": "MfRFraBw/Zt2KwDJJY4CW/unRKuOb+LqTzTX3eh7I/cbi70sttlHU9plRlobOkblCG0rOgW69CD4eO9GsouH4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\pos_equipo.csproj",
+  "projectFilePath": "C:\\Users\\luism\\source\\repos\\git_api2\\pos_equipo\\pos_equipo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luism\\.nuget\\packages\\mysqlconnector\\1.3.13\\mysqlconnector.1.3.13.nupkg.sha512"
   ],

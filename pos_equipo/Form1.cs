@@ -67,15 +67,13 @@ namespace pos_equipo
                             {
                                 Form2 ventana_pos = new Form2();
                                 this.Hide();
-                                ventana_pos.ShowDialog();
-                                this.Show();
+                                ventana_pos.Show();
                             }
                             else
                             {
                                 Form4 ventana_pos = new Form4();
                                 this.Hide();
-                                ventana_pos.ShowDialog();
-                                this.Show();
+                                ventana_pos.Show();
                             }
                         }
                     }

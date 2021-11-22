@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\pos_equipo.csproj": {}
+    "C:\\Users\\luism\\source\\repos\\git_api2\\pos_equipo\\pos_equipo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\pos_equipo.csproj": {
+    "C:\\Users\\luism\\source\\repos\\git_api2\\pos_equipo\\pos_equipo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\pos_equipo.csproj",
+        "projectUniqueName": "C:\\Users\\luism\\source\\repos\\git_api2\\pos_equipo\\pos_equipo.csproj",
         "projectName": "pos_equipo",
-        "projectPath": "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\pos_equipo.csproj",
+        "projectPath": "C:\\Users\\luism\\source\\repos\\git_api2\\pos_equipo\\pos_equipo.csproj",
         "packagesPath": "C:\\Users\\luism\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\obj\\",
+        "outputPath": "C:\\Users\\luism\\source\\repos\\git_api2\\pos_equipo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
