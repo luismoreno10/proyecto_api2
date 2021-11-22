@@ -105,7 +105,7 @@ namespace pos_equipo
             {
                 try
                 {
-                    MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=punto_de_venta; SSL mode=none");
+                    MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=puntoventa; SSL mode=none");
                     mySqlConnection.Open();
                     String query = "select * from productos where id_producto =" + label_idProducto.Text;
                     MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
@@ -306,7 +306,9 @@ namespace pos_equipo
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //Application.Exit();
+            Form1 ventana_inicio = new Form1();
+            ventana_inicio.Show();
+            this.Hide();
         }
 
 

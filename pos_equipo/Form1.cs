@@ -51,7 +51,7 @@ namespace pos_equipo
             {
                 try
                 {
-                    MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=punto_de_venta; SSL mode=none");
+                    MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=puntoventa; SSL mode=none");
                     mySqlConnection.Open();
                     String query = "select * from usuarios where id_usuario = " + textBox1.Text + " and password = " + textBox2.Text;
                     MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);

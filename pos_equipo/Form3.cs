@@ -66,7 +66,7 @@ namespace pos_equipo
 
                     try
                     {
-                        MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=punto_de_venta; SSL mode=none");
+                        MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=puntoventa; SSL mode=none");
                         mySqlConnection.Open();
                         String query = "INSERT INTO ventas values (NULL, CURRENT_DATE(), CURRENT_TIME(), " + datos_usuarios.id + ")";
                         MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
