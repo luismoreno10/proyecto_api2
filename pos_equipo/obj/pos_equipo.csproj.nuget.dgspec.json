@@ -1,34 +1,24 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\luism\\Desktop\\proyecto_api2-master\\pos_equipo\\pos_equipo.csproj": {}
+    "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\pos_equipo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luism\\Desktop\\proyecto_api2-master\\pos_equipo\\pos_equipo.csproj": {
+    "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\pos_equipo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luism\\Desktop\\proyecto_api2-master\\pos_equipo\\pos_equipo.csproj",
+        "projectUniqueName": "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\pos_equipo.csproj",
         "projectName": "pos_equipo",
-        "projectPath": "C:\\Users\\luism\\Desktop\\proyecto_api2-master\\pos_equipo\\pos_equipo.csproj",
+        "projectPath": "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\pos_equipo.csproj",
         "packagesPath": "C:\\Users\\luism\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luism\\Desktop\\proyecto_api2-master\\pos_equipo\\obj\\",
-=======
-    "C:\\Users\\ruddy\\Documents\\pos_equipo\\proyecto_api2\\proyecto_api2\\pos_equipo\\pos_equipo.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\ruddy\\Documents\\pos_equipo\\proyecto_api2\\proyecto_api2\\pos_equipo\\pos_equipo.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\ruddy\\Documents\\pos_equipo\\proyecto_api2\\proyecto_api2\\pos_equipo\\pos_equipo.csproj",
-        "projectName": "pos_equipo",
-        "projectPath": "C:\\Users\\ruddy\\Documents\\pos_equipo\\proyecto_api2\\proyecto_api2\\pos_equipo\\pos_equipo.csproj",
-        "packagesPath": "C:\\Users\\ruddy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ruddy\\Documents\\pos_equipo\\proyecto_api2\\proyecto_api2\\pos_equipo\\obj\\",
->>>>>>> 77750fcc2603ebbeb48ea39dcbebbb11336f2b1c
+        "outputPath": "C:\\Users\\luism\\Downloads\\PuntoDeVentaClase-main\\PuntoDeVentaClase-main\\pos_equipo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ruddy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

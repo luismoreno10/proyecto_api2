@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace pos_equipo
 {
+
+    //Operadores/Cajero tipo 1
+    //Administrador tipo 2
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -59,14 +63,25 @@ namespace pos_equipo
                             datos_usuarios.id = Int32.Parse(reader["id_usuario"].ToString());
                             datos_usuarios.sucursal = "Centro";
                             datos_usuarios.nombre = datos_usuarios.nombre = reader["nombre_usuario"].ToString() + " " + reader["apellido_usuario"].ToString();
-                            Form2 ventana_pos = new Form2();
-                            ventana_pos.Show();
-                            this.Hide();
+                            if (reader["permisosUsuario"].ToString().Equals("1"))
+                            {
+                                Form2 ventana_pos = new Form2();
+                                this.Hide();
+                                ventana_pos.ShowDialog();
+                                this.Show();
+                            }
+                            else
+                            {
+                                Form4 ventana_pos = new Form4();
+                                this.Hide();
+                                ventana_pos.ShowDialog();
+                                this.Show();
+                            }
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Usuario/Contraseña incorrecto.");
+                        MessageBox.Show("Usuario/Contraseña incorrecto a.");
                     }
                     mySqlConnection.Close();
                     textBox1.Text = "";
@@ -74,7 +89,7 @@ namespace pos_equipo
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Usuario/Contraseña incorrecto.");
+                    MessageBox.Show("Usuario/Contraseña incorrecto b."+ex);
                     textBox1.Text = "";
                     textBox2.Text = "";
                 } 

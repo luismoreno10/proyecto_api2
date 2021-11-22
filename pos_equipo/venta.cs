@@ -8,6 +8,5 @@ namespace pos_equipo
     {
         public static Double total;
         public static bool venta_realizada;
-        
     }
 }

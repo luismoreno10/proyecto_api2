@@ -27,6 +27,7 @@ namespace pos_equipo
             Form2.ActiveForm.Width = 843;
             Form2.ActiveForm.Height = 610;
             Acomodar();
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -34,7 +35,7 @@ namespace pos_equipo
             label8.Text = DateTime.Now.ToLongTimeString() + " " + DateTime.Now.ToLongDateString();
             label3.Text = datos_usuarios.nombre;
             label5.Text = datos_usuarios.sucursal;
-
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -195,6 +196,7 @@ namespace pos_equipo
                 else
                 {
                     Form3 ventana_pago = new Form3();
+                    ventana_pago.dgv = dataGridView1;
                     ventana_pago.Show();
                 }
 
@@ -206,8 +208,7 @@ namespace pos_equipo
                 Form1 ventana_inicio = new Form1();
                 ventana_inicio.Show();
                 this.Hide();
-
-            }
+            } 
 
 
         }
@@ -305,7 +306,7 @@ namespace pos_equipo
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
 

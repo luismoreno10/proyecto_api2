@@ -19,16 +19,15 @@ namespace pos_equipo
             textBox1.Text = venta.total.ToString();
             
         }
+        public DataGridView dgv { get; set; }
 
         private void Form3_Load(object sender, EventArgs e)
         {
             
         }
 
-        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        public void textBox2_KeyDown(object sender, KeyEventArgs e)
         {
-            
-
             if (e.KeyCode == Keys.Enter)
             {
                 double Total = Double.Parse(textBox1.Text);
@@ -64,11 +63,12 @@ namespace pos_equipo
                 {
                     MessageBox.Show("Insertamos venta");
                     //insertamos venta en la tabla venta
+
                     try
                     {
                         MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1; user=root; database=punto_de_venta; SSL mode=none");
                         mySqlConnection.Open();
-                        String query = "INSERT INTO ventas values (NULL, CURRENT_DATE(), CURRENT_TIME(), "+datos_usuarios.id+")";
+                        String query = "INSERT INTO ventas values (NULL, CURRENT_DATE(), CURRENT_TIME(), " + datos_usuarios.id + ")";
                         MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
                         mySqlCommand.ExecuteNonQuery();
                         //obtenemos ultimo id de la venta
@@ -84,11 +84,14 @@ namespace pos_equipo
                             //mySqlDataReader.GetDouble(0);
                         }
                         //insertamos los detalles en venta detalles
-                        for (int i = 0; i < Form2.dataGridView1.Rows.Count; i++)
+
+                        mySqlConnection.Close();
+                        mySqlConnection.Open();
+                        for (int i = 0; i < dgv.Rows.Count; i++)
                         {
-                            query = "INSERT INTO ventas_detalle (id_venta, id_producto, cantidad, precio_producto) VALUES "+
-                                "("+idVenta+","+ Form2.dataGridView1[2,i].Value.ToString() + ","+ Form2.dataGridView1[0,i].Value.ToString() +
-                                ","+ Form2.dataGridView1[3,i].Value.ToString() + " ) ";
+                            query = "INSERT INTO ventas_detalle (id_venta, id_producto, cantidad, precio_producto) VALUES " +
+                                "(" + idVenta + "," + dgv[2, i].Value.ToString() + "," + dgv[0, i].Value.ToString() +
+                                "," + dgv[3, i].Value.ToString() + " ) ";
                             mySqlCommand = new MySqlCommand(query, mySqlConnection);
                             mySqlCommand.ExecuteNonQuery();
                         }
@@ -101,7 +104,6 @@ namespace pos_equipo
                     {
                         MessageBox.Show("Error añadiendo venta a la tabla " + error.ToString());
                     }
-                    
                 }
                 else
                 {
@@ -109,5 +111,8 @@ namespace pos_equipo
                 }
             }
         }
+
+        
     }
+
 }
